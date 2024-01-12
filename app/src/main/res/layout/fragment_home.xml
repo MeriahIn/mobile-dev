@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbarSize="0dp"
+    tools:context=".mainpage.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="-48dp"
+            android:background="@color/blue_600"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/ll_main_feature"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/acet_search_bar"
+            style="@style/SearchBar"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="24dp"
+            android:background="@drawable/search_bar_without_stroke"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mcv_container"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="12dp"
+            android:layout_marginHorizontal="24dp"
+            app:layout_constraintEnd_toEndOf="@id/acet_search_bar"
+            app:layout_constraintStart_toStartOf="@id/acet_search_bar"
+            app:layout_constraintTop_toBottomOf="@id/acet_search_bar">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/aciv_ads"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ad" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:id="@+id/ll_main_feature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/main_features_menu"
+            android:divider="@drawable/horizontal_divider"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingVertical="16dp"
+            android:layout_marginHorizontal="24dp"
+            android:showDividers="middle"
+            app:layout_constraintTop_toBottomOf="@id/mcv_container"
+            tools:layout_editor_absoluteX="-18dp">
+
+            <LinearLayout
+                android:id="@+id/ll_catering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/aciv_catering"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/main_feature_bg"
+                    android:padding="11dp"
+                    app:srcCompat="@drawable/ic_catering" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextView.Grey.12Sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="Catering" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/main_feature_bg"
+                    android:padding="11dp"
+                    app:srcCompat="@drawable/ic_wardrobe" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextView.Grey.12Sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Wardrobe" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/main_feature_bg"
+                    android:padding="11dp"
+                    app:srcCompat="@drawable/ic_dekorasi_pesta" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextView.Grey.12Sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Dekorasi\nPesta"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_packet"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/main_feature_bg"
+                    android:padding="11dp"
+                    app:srcCompat="@drawable/ic_packet" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextView.Grey.12Sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Paket" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/actv_catering"
+            style="@style/TextView.Grey.16Sp.SemiBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Layanan Catering"
+            app:layout_constraintStart_toStartOf="@id/ll_main_feature"
+            app:layout_constraintTop_toBottomOf="@id/ll_main_feature" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:background="@drawable/button_blue200_rad100"
+            android:fontFamily="@font/inter_medium"
+            android:paddingHorizontal="18dp"
+            android:text="Lihat Semua"
+            android:textAllCaps="false"
+            android:textColor="@color/blue_500"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintBottom_toBottomOf="@id/actv_catering"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/actv_catering" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_catering"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="24dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/actv_catering"
+            tools:itemCount="1"
+            tools:listitem="@layout/home_item_layout" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/actv_wardrobe"
+            style="@style/TextView.Grey.16Sp.SemiBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Layanan Wardrobe"
+            app:layout_constraintStart_toStartOf="@id/rv_catering"
+            app:layout_constraintTop_toBottomOf="@id/rv_catering" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:background="@drawable/button_blue200_rad100"
+            android:fontFamily="@font/inter_medium"
+            android:paddingHorizontal="18dp"
+            android:text="Lihat Semua"
+            android:textAllCaps="false"
+            android:textColor="@color/blue_500"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/actv_wardrobe"
+            app:layout_constraintEnd_toEndOf="@id/ll_main_feature"
+            app:layout_constraintTop_toTopOf="@id/actv_wardrobe" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_wardrobe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/actv_wardrobe"
+            tools:itemCount="1"
+            android:layout_marginHorizontal="24dp"
+            tools:listitem="@layout/home_item_layout" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/actv_decoration"
+            style="@style/TextView.Grey.16Sp.SemiBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Layanan Dekorasi Pesta"
+            app:layout_constraintStart_toStartOf="@id/rv_wardrobe"
+            app:layout_constraintTop_toBottomOf="@id/rv_wardrobe" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:background="@drawable/button_blue200_rad100"
+            android:fontFamily="@font/inter_medium"
+            android:paddingHorizontal="18dp"
+            android:text="Lihat Semua"
+            android:textAllCaps="false"
+            android:textColor="@color/blue_500"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/actv_decoration"
+            app:layout_constraintEnd_toEndOf="@id/ll_main_feature"
+            app:layout_constraintTop_toTopOf="@id/actv_decoration" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_decoration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="24dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/actv_decoration"
+            tools:itemCount="1"
+            tools:listitem="@layout/home_item_layout" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/actv_packet"
+            style="@style/TextView.Grey.16Sp.SemiBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Layanan Paket"
+            app:layout_constraintStart_toStartOf="@id/rv_decoration"
+            app:layout_constraintTop_toBottomOf="@id/rv_decoration" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:background="@drawable/button_blue200_rad100"
+            android:fontFamily="@font/inter_medium"
+            android:paddingHorizontal="18dp"
+            android:text="Lihat Semua"
+            android:textAllCaps="false"
+            android:textColor="@color/blue_500"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/actv_packet"
+            app:layout_constraintEnd_toEndOf="@id/ll_main_feature"
+            app:layout_constraintTop_toTopOf="@id/actv_packet" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_packet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="24dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/actv_packet"
+            tools:itemCount="1"
+            tools:listitem="@layout/home_item_layout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

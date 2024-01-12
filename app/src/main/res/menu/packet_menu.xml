@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/my_package"
+        android:icon="@drawable/ic_product_unselected"
+        android:title="Paketku"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/explore"
+        android:icon="@drawable/ic_discovery_unselected"
+        android:title="Explore"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/request"
+        android:icon="@drawable/ic_document_unselected"
+        android:title="Permintaan"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/history"
+        android:icon="@drawable/ic_history_unselected"
+        android:title="Riwayat"
+        app:showAsAction="always" />
+
+</menu>

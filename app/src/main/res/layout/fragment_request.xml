@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="24dp"
+    android:paddingTop="24dp"
+    android:scrollbarSize="0dp"
+    tools:context=".packages.RequestFragment"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/aciv_mypackage_back_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_back_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/actv_request_title"
+            style="@style/TextView.Grey.20sp.BoldInter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Permintaan"
+            android:layout_marginStart="24dp"
+            app:layout_constraintStart_toEndOf="@id/aciv_mypackage_back_button"
+            app:layout_constraintTop_toTopOf="@id/aciv_mypackage_back_button"
+            app:layout_constraintBottom_toBottomOf="@id/aciv_mypackage_back_button"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_request"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/aciv_mypackage_back_button"
+            android:layout_height="0dp"
+            android:nestedScrollingEnabled="true"
+            android:layout_marginTop="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <!--<androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/actt_recent"
+            style="@style/TextView.Grey.16Sp.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Baru Saja"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/actv_request_title" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_request_recent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/actt_recent" />
+
+        <View
+            android:id="@+id/v_pembagi1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_300"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rv_request_recent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/actt_week"
+            style="@style/TextView.Grey.16Sp.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="1 Minggu Terakhir"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/v_pembagi1" />
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/rv_request_week"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/actt_week" />
+
+        <View
+            android:id="@+id/v_week_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_300"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rv_request_week" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/actt_month"
+            style="@style/TextView.Grey.16Sp.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="1 Bulan Terakhir"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/v_week_divider" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_request_month"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/actt_month" />
+-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

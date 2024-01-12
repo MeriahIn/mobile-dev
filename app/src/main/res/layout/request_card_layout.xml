@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:strokeColor="@color/grey_500">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_request_history_profile_picture"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/user_pp_1"
+            app:layout_constraintBottom_toTopOf="@id/aciv_request_history_collapse_button"
+            app:layout_constraintEnd_toStartOf="@id/ll_request_history_order"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/ll_request_history_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@id/aciv_request_history_whatsapp"
+            app:layout_constraintStart_toEndOf="@id/civ_request_history_profile_picture"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/actv_request_history_order_id"
+                style="@style/TextView.Grey300.12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SI12304019309" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/actv_request_history_user_name"
+                style="@style/TextView.Grey700.16Sp.BoldInter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Catering Jaya Alam" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/actv_request_history_service_ordered"
+                style="@style/TextView.Grey500.12Sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Layanan Pesta Pernikahan" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/aciv_request_history_whatsapp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_whatsapp"
+            app:layout_constraintBottom_toTopOf="@+id/aciv_request_history_collapse_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ll_request_history_order"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/aciv_request_history_collapse_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_request_history_order" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group_request_history_hidden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="actv_request_history_service_requested, cl_request_history_item1, cl_request_history_item2, cl_request_history_item3" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/actv_request_history_service_requested"
+            style="@style/TextView.Grey700.12Sp.RegularInterBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Layanan yang Diajukan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/aciv_request_history_collapse_button" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_request_history_item1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/actv_request_history_service_requested">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/actv_request_history_item1"
+                style="@style/TextView.Grey700.12Sp.RegularInter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Rendang"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/actv_request_history_item1_reject"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/actv_request_history_item1_reject"
+                style="@style/TextView.White.12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/badge_red_background"
+                android:paddingHorizontal="12dp"
+                android:text="Ditolak"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/actv_request_history_item1_accept"
+                app:layout_constraintStart_toEndOf="@id/actv_request_history_item1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/actv_request_history_item1_accept"
+                style="@style/TextView.White.12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/badge_green_background"
+                android:paddingHorizontal="12dp"
+                android:text="Diterima"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/actv_request_history_item1_reject"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_request_history_item2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl_request_history_item1">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/actv_request_history_item2"
+                style="@style/TextView.Grey700.12Sp.RegularInter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Soto"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/actv_request_history_item2_reject"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/actv_request_history_item2_reject"
+                style="@style/TextView.White.12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/badge_red_background"
+                android:paddingHorizontal="12dp"
+                android:text="Ditolak"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/actv_request_history_item2_accept"
+                app:layout_constraintStart_toEndOf="@id/actv_request_history_item2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/actv_request_history_item2_accept"
+                style="@style/TextView.White.12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/badge_green_background"
+                android:paddingHorizontal="12dp"
+                android:text="Diterima"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/actv_request_history_item2_reject"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_request_history_item3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl_request_history_item2">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/actv_request_history_item3"
+                style="@style/TextView.Grey700.12Sp.RegularInter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Gulai"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/actv_request_history_item3_reject"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/actv_request_history_item3_reject"
+                style="@style/TextView.White.12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/badge_red_background"
+                android:paddingHorizontal="12dp"
+                android:text="Ditolak"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/actv_request_history_item3_accept"
+                app:layout_constraintStart_toEndOf="@id/actv_request_history_item3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/actv_request_history_item3_accept"
+                style="@style/TextView.White.12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/badge_green_background"
+                android:paddingHorizontal="12dp"
+                android:text="Diterima"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/actv_request_history_item3_reject"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,137 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SewainHackathon2023" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.SewainHackathon2023" parent="Base.Theme.SewainHackathon2023">
+        <item name="android:windowBackground">@color/base_white</item>
+    </style>
+
+    <style name="SearchBar" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/search_bar_bg</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/grey_700</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:drawableStart">@drawable/ic_search</item>
+        <item name="android:text">Cari Layanan &amp; Paket</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:drawablePadding">12dp</item>
+    </style>
+
+    <style name="TextView" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.Grey">
+        <item name="android:textColor">@color/grey_700</item>
+    </style>
+
+    <style name="TextView.Grey300">
+        <item name="android:textColor">@color/grey_300</item>
+    </style>
+
+    <style name="TextView.Grey300.12sp">
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineHeight" tools:targetApi="p">16sp</item>
+    </style>
+
+    <style name="TextView.Grey500">
+        <item name="android:textColor">@color/grey_500</item>
+    </style>
+
+    <style name="TextView.Grey700">
+        <item name="android:textColor">@color/grey_700</item>
+    </style>
+
+    <style name="TextView.Grey600">
+        <item name="android:textColor">@color/grey_600</item>
+    </style>
+
+    <style name="TextView.Grey600.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextView.Grey500.12Sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextView.Grey500.12Sp.Medium">
+        <item name="android:fontFamily">@font/inter_medium</item>
+    </style>
+
+    <style name="TextView.Grey.12Sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!--    Typography   -->
+    <style name="TextView.Grey.16Sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextView.Grey.20sp">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextView.Grey.20sp.SemiBold">
+        <item name="android:fontFamily">@font/inter_semi_bold</item>
+    </style>
+
+    <style name="TextView.Grey.20sp.BoldInter">
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+
+    <style name="TextView.Grey.16Sp.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.Grey.16Sp.SemiBold">
+        <item name="android:fontFamily">@font/inter_semi_bold</item>
+    </style>
+
+    <style name="TextView.Grey.16Sp.BoldInter">
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="TextView.Grey700.16Sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextView.Grey700.16Sp.BoldInter">
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="TextView.Grey700.12Sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextView.Grey700.12Sp.RegularInterBold">
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="TextView.Grey700.12Sp.RegularInter">
+        <item name="android:fontFamily">@font/inter_regular</item>
+    </style>
+
+
+    <style name="TextViewAvailableStatus" parent="TextView.Grey.12Sp">
+        <item name="android:textColor">@color/blue_100</item>
+        <item name="android:background">@drawable/text_view_blue500_rad100</item>
+        <item name="android:text">Tersedia</item>
+        <item name="android:drawableStart">@drawable/ic_check</item>
+        <item name="android:drawablePadding">4dp</item>
+    </style>
+
+    <style name="TextView.White">
+        <item name="android:textColor">@color/grey_100</item>
+    </style>
+
+    <style name="TextView.White.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

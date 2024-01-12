@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/packet_nav"
+    app:startDestination="@id/my_package">
+
+    <fragment
+        android:id="@+id/my_package"
+        android:name="com.horehoreteam.sewain_hackathon2023.packages.MyPackageFragment"
+        android:label="fragment_my_package"
+        tools:layout="@layout/fragment_my_package" />
+    <fragment
+        android:id="@+id/explore"
+        android:name="com.horehoreteam.sewain_hackathon2023.packages.ExplorePackageFragment"
+        android:label="fragment_explore_package"
+        tools:layout="@layout/fragment_explore_package" />
+    <fragment
+        android:id="@+id/history"
+        android:name="com.horehoreteam.sewain_hackathon2023.packages.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/request"
+        android:name="com.horehoreteam.sewain_hackathon2023.packages.RequestFragment"
+        android:label="fragment_request"
+        tools:layout="@layout/fragment_request" />
+</navigation>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ac_iv_back_pesta"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_button_back" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_pernikahan_pesta"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ac_iv_back_pesta">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/aciv_pesta_pernikahan_pesta"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            app:srcCompat="@drawable/img_pernikahan_keluarga" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_pesta_pernikahan_pesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Pesta Pernikahan "
+        android:textColor="@color/blue_700"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/cv_pernikahan_pesta"
+        app:layout_constraintTop_toBottomOf="@+id/cv_pernikahan_pesta" />
+
+    <TextView
+        android:id="@+id/tv_harga_pesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_regular"
+        android:text="RP 800.000 - 1.200.000"
+        android:textColor="@color/grey_300"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_pesta_pernikahan_pesta"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pesta_pernikahan_pesta" />
+
+
+    <TextView
+        android:id="@+id/tv_deskripsi_layanan_pesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Deskripsi Layanan"
+        android:textColor="@color/blue_700"
+        app:layout_constraintStart_toStartOf="@+id/iv_bintang5_pesta"
+        app:layout_constraintTop_toBottomOf="@+id/v_pembagi0_pesta" />
+
+    <ImageView
+        android:id="@+id/iv_bintang5_pesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_harga_pesta"
+        app:layout_constraintTop_toBottomOf="@+id/tv_harga_pesta"
+        app:srcCompat="@drawable/review" />
+
+    <View
+        android:id="@+id/v_pembagi0_pesta"
+        android:layout_width="382dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/grey_300"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_bintang5_pesta" />
+
+    <View
+        android:id="@+id/v_pembagi2_pesta"
+        android:layout_width="382dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/grey_300"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <View
+        android:id="@+id/v_pembagi3_pesta"
+        android:layout_width="382dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/grey_300"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_catering_king_pesta" />
+
+    <TextView
+        android:id="@+id/tv_paragraf_layanan_pesta"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="Apakah Anda sedang merencanakan pernikahan impian Anda? Kami siap membantu Anda membuat momen tersebut menjadi tak terlupakan dengan layanan paket makanan pesta pernikahan kami yang istimewa."
+        android:textColor="@color/grey_300"
+        android:textSize="12sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_deskripsi_layanan_pesta"
+        app:layout_constraintTop_toBottomOf="@+id/tv_deskripsi_layanan_pesta" />
+
+    <ImageView
+        android:id="@+id/iv_catering_king_pesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_baca_selengkapnya_pesta"
+        app:layout_constraintTop_toBottomOf="@+id/v_pembagi2_pesta"
+        app:srcCompat="@drawable/img_catering" />
+
+    <TextView
+        android:id="@+id/tv_baca_selengkapnya_pesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Baca Selengkapnya"
+        android:textColor="@color/grey_300"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_paragraf_layanan_pesta"
+        app:layout_constraintTop_toBottomOf="@+id/tv_paragraf_layanan_pesta" />
+
+    <View
+        android:id="@+id/v_pembagi2_pesta_tengah"
+        android:layout_width="382dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/grey_300"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_baca_selengkapnya_pesta" />
+
+    <TextView
+        android:id="@+id/tv_kebutuhan11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Kebutuhan"
+        android:textColor="@color/blue_700"
+        app:layout_constraintStart_toStartOf="@+id/tv_baca_selengkapnya_pesta"
+        app:layout_constraintTop_toBottomOf="@id/v_pembagi2_pesta_tengah" />
+
+    <TextView
+        android:id="@+id/tv_catering_king_pesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Catering King Alam"
+        android:textColor="@color/blue_700"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_catering_king_pesta"
+        app:layout_constraintTop_toTopOf="@+id/iv_catering_king_pesta" />
+
+    <TextView
+        android:id="@+id/tv_jalan_pesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_medium"
+        android:text="Jl, Ahmad Yani"
+        android:textColor="@color/blue_300"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_catering_king_pesta"
+        app:layout_constraintTop_toBottomOf="@+id/tv_catering_king_pesta" />
+
+    <TextView
+        android:id="@+id/tv_ulasan_layanan_pesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Ulasan Layanan"
+        android:textColor="@color/grey_700"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/iv_catering_king_pesta"
+        app:layout_constraintTop_toBottomOf="@+id/iv_catering_king_pesta" />
+
+    <ImageView
+        android:id="@+id/iv_layanan_diproses_pesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/iv_rata_ulasan_pesta"
+        app:layout_constraintTop_toBottomOf="@+id/iv_rata_ulasan_pesta"
+        app:srcCompat="@drawable/review_plus_text" />
+
+    <ImageView
+        android:id="@+id/iv_rata_ulasan_pesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_jalan_pesta"
+        app:layout_constraintTop_toBottomOf="@+id/tv_jalan_pesta"
+        app:srcCompat="@drawable/img_review_plus_bintang" />
+
+    <ImageView
+        android:id="@+id/iv_5_5_ulasan_pesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_ulasan_layanan_pesta"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ulasan_layanan_pesta"
+        app:srcCompat="@drawable/img_bintang5" />
+
+    <ImageView
+        android:id="@+id/iv_lihat_semua_pesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="140dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/tv_ulasan_layanan_pesta"
+        app:layout_constraintTop_toTopOf="@+id/tv_ulasan_layanan_pesta"
+        app:srcCompat="@drawable/img_button_lihat_semua" />
+
+    <ImageView
+        android:id="@+id/iv_tersedia_pesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="236dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_bintang5_pesta"
+        app:layout_constraintTop_toTopOf="@+id/iv_bintang5_pesta"
+        app:srcCompat="@drawable/img_tersedia" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_kebutuhan11"
+        app:layout_constraintTop_toBottomOf="@+id/tv_kebutuhan11"
+        app:srcCompat="@drawable/img_blue_catering" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16"
+        app:srcCompat="@drawable/img_blue_confetti" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9"
+        app:srcCompat="@drawable/img_blue_shirt" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_regular"
+        android:text=" 1 Layanan Makanan"
+        android:textColor="@color/grey_300"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="@+id/imageView16" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/inter_regular"
+        android:text=" 1 Layanan Wardrobe"
+        android:textColor="@color/grey_300"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView18"
+        app:layout_constraintTop_toTopOf="@+id/imageView18" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/inter_regular"
+        android:text=" 1 Layanan Dekorasi"
+        android:textColor="@color/grey_300"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView17"
+        app:layout_constraintTop_toTopOf="@+id/imageView17" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
