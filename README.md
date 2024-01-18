@@ -1,6 +1,6 @@
 # MeriahIn--HackFest--2024
 
-<p align="justify"> This repository contains a collection of resources used during the project for HackFest 2024. This project focuses on creating an Mobile Apps using kotlin. </p>
+<p align="justify"> This repository contains a collection of resources used during the project for HackFest 2024. This project focuses on creating an Mobile Apps for user tenant using kotlin. </p>
 
 <p align="center">
   <img src="Section 1.png" width=75% height=75% >
